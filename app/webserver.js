@@ -2,7 +2,7 @@
 
 const color = process.env.COLOR_BACKGROUND || 'white';
 const port = process.env.COLOR_PORT || 8080;
-const fqdn = process.env.HOSTNAME || 'localhost';
+const fqdn = process.env.HOSTNAME || '127.0.0.1';
 const http = require('http');
 
 http.createServer(function (request, response) {
